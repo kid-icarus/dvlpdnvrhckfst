@@ -417,3 +417,9 @@ body {
 canvas {
   background-color: white;
 }
+
+.instructions {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
