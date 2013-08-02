@@ -119,11 +119,14 @@ function colorNameToHex(colour)
 }
 
 $('#chule-dood').change(function(){
-  var origCol = colorNameToHex($(this).val());
-  if (typeof origCol === 'string') {
-    var newNew = origCol.split('').reverse().join('');
-    console.log(newNew);
-  }
+  var origCol = $(this).val();
+  var origHex = colorNameToHex(origCol);
+
+  // var newNew = origCol.split('').reverse().join('');
+
+  console.log(origCol);
+  console.log(origHex);
+  // console.log(newNew);
 
   // $('body').css('background', origCol);
 });
