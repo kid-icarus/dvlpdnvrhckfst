@@ -1,0 +1,357 @@
+$box-sizing-polyfill-path: "/polyfill/boxsizing.htc";
+
+// Color.
+//----------------------------------------------------------------------------
+$white:      #ffffff;
+$black:      #000000;
+$gray-light: #b3b3b3;
+$gray:       #999;
+$gray-dark:  #333;
+
+// Semantic color.
+//----------------------------------------------------------------------------
+$clr-neutral:      $gray-light;
+$clr-text:         $gray-dark;
+$clr-link:         $gray;
+$clr-border:       $gray-light;
+$clr-status:       $gray-light;
+$clr-warning:      $gray-light;
+$clr-error:        $gray-light;
+$clr-table-border: $gray-light;
+$clr-table-odd:    $white;
+$clr-table-even:   transparent;
+
+// Fallback stacks.
+//----------------------------------------------------------------------------
+$ff-mono:  monospace;
+$ff-sans:  sans-serif;
+$ff-serif: serif;
+
+// Semantic fonts.
+//----------------------------------------------------------------------------
+$ff-body:    "proxima-nova-1", "proxima-nova-2", $ff-sans;
+$ff-heading: "kepler-std-condensed-display-1", "kepler-std-condensed-display-2", $ff-serif;
+$ff-subheading: "kepler-std-semicondensed-sub-1", "kepler-std-semicondensed-sub-2", $ff-serif;
+
+// Scale.
+//----------------------------------------------------------------------------
+// These are relevant numbers. Both look good with the font I've chosen.
+$scale-1: 18px;
+$scale-2: 98px;
+
+// Uncomment to get scale values. Oddly, these are whole numbers.
+// @include modular-scale-list(-10, 50, $scale-1 $scale-2, golden());
+// @include modular-scale-list-output(-10, 20, $scale-1 $scale-2, golden());
+
+
+// Font size.
+//----------------------------------------------------------------------------
+$ideal-text-size: 18px;
+
+$fs-xxs:      modular-scale(-3);
+$fs-xs:       modular-scale(-2);
+$fs-s:        modular-scale(-1);
+
+$fs-m: $ideal-text-size;
+
+$fs-l:        modular-scale(1);
+$fs-xl:       modular-scale(2);
+$fs-xxl:      modular-scale(3);
+$fs-xxxl:     modular-scale(4);
+$fs-xxxxl:    modular-scale(5);
+
+// Semantic font size.
+//----------------------------------------------------------------------------
+$fs-h1: $fs-xxxxl !default;
+$fs-h2: $fs-xxxl  !default;
+$fs-h3: $fs-xxl   !default;
+$fs-h4: $fs-xl    !default;
+$fs-h5: $fs-s     !default;
+$fs-h6: $fs-xxs   !default;
+
+// Indentation.
+//----------------------------------------------------------------------------
+$indent-amount: 3em !default;
+
+// Vertical rhythm.
+//----------------------------------------------------------------------------
+$base-font-size: $ideal-text-size;
+$base-line-height: $fs-xxl;
+
+// Layout.
+//----------------------------------------------------------------------------
+$breakpoint-to-ems: true;
+
+// Breakpoint.
+// Next up is setting span lengths to be on a scale.
+$breakpoint-s:  480px;
+$breakpoint-m:  768px;
+$breakpoint-l:  1080px;
+
+// Container.
+$container-s:   90%;
+$container-m:   $breakpoint-m;
+$container-l:   $breakpoint-l;
+
+// Tweakpoint.
+
+// Width.
+$w-gutter:      1em;
+$w-gutter-half: $w-gutter / 2;
+
+// Grid.
+$grids:         4;
+$grids:         add-grid(6 at $breakpoint-m);
+$grids:         add-grid(8 at $breakpoint-l);
+
+// Gutter.
+$gutters:      1/3;
+
+// Output.
+$output: 'isolation';
+
+// Z-Index.
+//----------------------------------------------------------------------------
+$background: -1;
+$midground: 500;
+$foreground: 1000;
+
+// Transition.
+//----------------------------------------------------------------------------
+$default-transition-duration: .15s;
+
+// Text shadow.
+//----------------------------------------------------------------------------
+$default-text-shadow-color: rgba($gray-dark, .6);
+$default-text-shadow-blur: 1px;
+$default-text-shadow-v-offset: 1px;
+
+// Border radius.
+//----------------------------------------------------------------------------
+$radius-s: .25em;
+$radius-m: .5em;
+$radius-l: 50%;
+
+// Button settings.
+//----------------------------------------------------------------------------
+$clr-btn--primary:   $gray;
+$clr-btn--secondary: $gray-dark;
+$clr-btn--tertiary:  $gray-light;
+$btn-style: 'none';
+$btn-highlight-strength: .5;
+$btn-shadow-strength: .5;
+
+* {
+  @include border-box;
+}
+
+* html {
+  // font-size: 100% * $base-font-size / $browser-default-font-size;
+}
+
+html {
+  // font-size: $base-font-size;
+  // @include adjust-leading-to(28/6);
+}
+
+html,
+input {
+  font-family: $ff-heading;
+}
+
+body {
+  color: $clr-text;
+}
+
+//----------------------------------------------------------------------------
+// Headings.
+h1 {
+  font-family: $ff-heading;
+  @include adjust-font-size-to($fs-h1);
+  @include rhythm(2, 0, 0, 2, $fs-h1);
+}
+
+h2 {
+  font-family: $ff-heading;
+  @include adjust-font-size-to($fs-h2);
+  @include rhythm(2, 0, 0, 2, $fs-h2);
+}
+
+h3 {
+  font-family: $ff-heading;
+  @include adjust-font-size-to($fs-h3);
+  @include rhythm(2, 0, 0, 2, $fs-h3);
+}
+
+h4 {
+  font-family: $ff-heading;
+  font-weight: normal;
+  @include adjust-font-size-to($fs-h4);
+  @include rhythm(4, 0, 0, 0, $fs-h4);
+}
+
+h5 {
+  font-family: $ff-heading;
+  @include adjust-font-size-to($fs-h5);
+  @include rhythm(4, 0, 0, 0, $fs-h5);
+}
+
+h6 {
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  @include adjust-font-size-to($fs-h6);
+  @include rhythm(4, 0, 0, 0, $fs-h6);
+}
+
+//----------------------------------------------------------------------------
+// Links.
+a {
+  @include link-colors($clr-link, darken($clr-link, 10%));
+  @include hover-link;
+}
+
+//----------------------------------------------------------------------------
+// Copy.
+p {
+  margin: 0 0 rhythm(2);
+  font-family: $ff-body;
+}
+
+blockquote {
+  margin: rhythm(2) 0 rhythm(2) $indent-amount;
+  font-style: italic;
+}
+
+//----------------------------------------------------------------------------
+// Images.
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+//----------------------------------------------------------------------------
+// Definition lists.
+dl {
+  margin-bottom: rhythm(3);
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: $w-gutter;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  @include box-shadow(0 0 5px $gray);
+}
+
+//----------------------------------------------------------------------------
+// Form labels.
+label {
+  display: block;
+  margin-bottom: rhythm(1, $fs-s);
+  font-family: $ff-sans;
+  font-weight: bold;
+  @include adjust-font-size-to($fs-s);
+
+  // Labels on checkboxes and radios.
+  &.option {
+    display: inline;
+    font-weight: normal;
+  }
+}
+
+//----------------------------------------------------------------------------
+// Forms.
+textarea,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  margin-bottom: rhythm(1);
+  padding: rhythm(.5);
+  max-width: 100%;
+  background-color: $white;
+  border-color: $gray;
+  color: $gray-dark;
+  @include border-radius(3px);
+  @include box-sizing(content-box);
+  @include rhythm-borders(1px, .5);
+
+  &:focus {
+    border-color: $gray;
+  }
+}
+
+input[type="file"] {
+  font-family: $ff-sans;
+}
+
+input[type="submit"],
+button {
+  @include button;
+  @include button--medium;
+  @include button--primary;
+}
+
+select {
+  margin-bottom: rhythm(1, $fs-s);
+  @include adjust-font-size-to($fs-m);
+}
+
+// ---------------------------------------------------------------------------
+// Tables.
+table {
+  margin-bottom: rhythm(2);
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+thead {
+  text-align: left;
+
+  th {
+    vertical-align: bottom;
+  }
+}
+
+th,
+td {
+  padding: 8px;
+  vertical-align: top;
+  border-top: 1px solid $clr-table-border;
+}
+
+// Remove top border from thead by default.
+caption + thead tr:first-child th,
+caption + thead tr:first-child td,
+colgroup + thead tr:first-child th,
+colgroup + thead tr:first-child td,
+thead:first-child tr:first-child th,
+thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+// Account for multiple tbody instances.
+tbody + tbody {
+  border-top: 2px solid $clr-table-border;
+}
+
+tr.odd  { background-color: $clr-table-odd; }
+tr.even { background-color: $clr-table-even; }

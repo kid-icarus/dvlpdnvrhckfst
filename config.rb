@@ -1,5 +1,6 @@
 require 'compass'
 require 'singularitygs'
+require 'modular-scale'
 
 http_path = "/"
 css_dir = "css"
