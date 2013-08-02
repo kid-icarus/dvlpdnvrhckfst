@@ -1,0 +1,69 @@
+/*
+Syntax error: File to import not found or unreadable: modular-scale.
+              Load paths:
+                /Users/killtheliterate/Sites/sandbox_html/dvlpdnvrjckfst.loc/sass
+                /Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets
+                /Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/breakpoint-2.0.6/stylesheets
+                /Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/singularitygs-1.1.2/stylesheets
+                Compass::SpriteImporter
+        on line 4 of /Users/killtheliterate/Sites/sandbox_html/dvlpdnvrjckfst.loc/sass/screen.scss
+
+1: /Users/killtheliterate/Sites/sandbox_html/dvlpdnvrjckfst.loc/sass/screen.scss
+
+Backtrace:
+/Users/killtheliterate/Sites/sandbox_html/dvlpdnvrjckfst.loc/sass/screen.scss:4
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/import_node.rb:45:in `import'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/root_node.rb:20:in `render'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/compiler.rb:146:in `block (2 levels) in compile'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/compiler.rb:132:in `timed'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/compiler.rb:145:in `block in compile'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/logger.rb:46:in `red'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/compiler.rb:144:in `compile'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/compiler.rb:124:in `compile_if_required'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/compiler.rb:109:in `block (2 levels) in run'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/compiler.rb:107:in `each'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/compiler.rb:107:in `block in run'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/compiler.rb:132:in `timed'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/compiler.rb:106:in `run'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/watcher/compiler.rb:24:in `compile'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/1.9.1/forwardable.rb:201:in `compile'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:92:in `sass_modified'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:85:in `sass_callback'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/watcher/watch.rb:17:in `call'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/watcher/watch.rb:17:in `run_callback'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:78:in `block (2 levels) in listen_callback'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:77:in `each'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:77:in `block in listen_callback'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:76:in `each'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:76:in `listen_callback'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/listener.rb:212:in `call'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/listener.rb:212:in `on_change'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/listener.rb:221:in `block in initialize_adapter'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `call'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: modular-scale.\A               Load paths:\A                 /Users/killtheliterate/Sites/sandbox_html/dvlpdnvrjckfst.loc/sass\A                 /Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets\A                 /Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/breakpoint-2.0.6/stylesheets\A                 /Users/killtheliterate/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/singularitygs-1.1.2/stylesheets\A                 Compass::SpriteImporter\A         on line 4 of /Users/killtheliterate/Sites/sandbox_html/dvlpdnvrjckfst.loc/sass/screen.scss\A \A 1: /Users/killtheliterate/Sites/sandbox_html/dvlpdnvrjckfst.loc/sass/screen.scss"; }

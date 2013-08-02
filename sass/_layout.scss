@@ -1,0 +1,15 @@
+.l-constrained {
+  margin: 0 auto;
+  min-height: 100%;
+  max-width: $container-s;
+  @include clearfix;
+  @include background-grid;
+
+  @include breakpoint($breakpoint-m, $no-query: '.lt-ie9') {
+    max-width: $container-m;
+  }
+
+  @include breakpoint($breakpoint-l, $no-query: '.lt-ie9') {
+    max-width: $container-l;
+  }
+}
