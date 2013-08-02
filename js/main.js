@@ -94,8 +94,12 @@ function onFrame(event) {
 $('#chule-dood').change(function(){
   textz = $(this).val();
   hi = colourNameToHex(textz);
+  var newNew = hi.split('').reverse('').join('');
+  blah = '#' + newNew.substring(0, newNew.length - 1);
 
-  console.log(hi);
+  console.log(blah);
+
+  $('canvas').css('background', blah);
 
   $(this).val('');
 });
