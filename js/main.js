@@ -81,6 +81,7 @@ function onFrame(event) {
 
 $('#chule-dood').change(function(){
   textz = $(this).val();
+  $(this).val('');
 });
 
 
