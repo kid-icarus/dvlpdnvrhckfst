@@ -420,6 +420,6 @@ canvas {
 
 .instructions {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 10;
+  left: 10;
 }
