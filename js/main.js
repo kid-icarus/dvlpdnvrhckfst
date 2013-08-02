@@ -65,6 +65,10 @@ function onFrame(event) {
         rotate = 3;
         break;
 
+      case 'rotate stop':
+        rotate = 0;
+        break;
+
       case 'rotate fast':
         rotate = 30;
         break;
