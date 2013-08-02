@@ -1,6 +1,8 @@
 // Create a Paper.js Path to draw a line into it:
 var path = new Path();
-var textz = 
+var textz = '';
+var rotate = 5;
+var freakout = false;
 
 // Give the stroke a color
 path.strokeColor = 'black';
@@ -48,24 +50,36 @@ function onFrame(event) {
         break;
 
       case 'go':
-        speed = 1;
+        speed = .75;
+        break;
+
+      case 'go fast':
+        speed = .45;
+        break;
 
       case 'freak the fuck out':
-        path.fillColor.hue += item.bounds.width / speed;
+        freakout = true;
+        break;
+
+      case 'rotate':
+        rotate = 3;
+        break;
+
+      case 'rotate fast':
+        rotate = 30;
         break;
 
       default:
         path.fillColor = textz;
         break;
-
-      case 'rotate':
-        item.rotate(3);
-        break;
-
     }
     // Move the item 1/20th of its width to the right. This way
     // larger circles move faster than smaller circles:
     item.position.x += item.bounds.width / speed;
+    if (freakout == true) {
+        path.fillColor.hue += item.bounds.width / speed;
+    }
+    item.rotate(rotate);
     //item.opacity = 0.5;
 
     // If the item has left the view on the right, move it back
@@ -74,9 +88,6 @@ function onFrame(event) {
       item.position.x = -item.bounds.width;
     }
   }
-
-  //path.rotate(3);
-  //path.position += 5;
 }
 
 $('#chule-dood').change(function(){
