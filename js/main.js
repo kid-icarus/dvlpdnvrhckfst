@@ -101,9 +101,10 @@ $('#chule-dood').change(function(){
   var newNew = hi.split('').reverse('').join('');
   blah = '#' + newNew.substring(0, newNew.length - 1);
 
-  console.log(blah);
 
   $('canvas').css('background', blah);
+  $('.instructions').css('color', textz);
+  $('.legend').css('color', textz);
 
   $(this).val('');
 });
@@ -140,3 +141,7 @@ function colourNameToHex(colour)
 
     return false;
 }
+
+$('.legend').on('click', function() {
+  $('.instructions').toggle();
+});
