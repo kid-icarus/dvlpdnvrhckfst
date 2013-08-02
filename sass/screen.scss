@@ -16,8 +16,21 @@
 // Foolishness and poor organizational skillz.
 
 #page {
+  position: relative;
   background: #ffffff;
 }
 
 .box {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.box:first-child {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+}
+
+input {
 }
