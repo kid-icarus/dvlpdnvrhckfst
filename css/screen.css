@@ -377,3 +377,7 @@ tr.even {
     max-width: 1080px;
   }
 }
+
+#page {
+  background: #ffffff;
+}
