@@ -383,9 +383,13 @@ tr.even {
   }
 }
 
+body {
+  background: red;
+}
+
 #page {
   position: relative;
-  background: #ffffff;
+  background-color: white;
 }
 
 .box {
@@ -396,6 +400,20 @@ tr.even {
 .box:first-child {
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 36%;
   text-align: center;
+}
+
+.box input {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 2.33333em;
+  line-height: 1.61905em;
+}
+
+canvas {
+  background-color: white;
 }
